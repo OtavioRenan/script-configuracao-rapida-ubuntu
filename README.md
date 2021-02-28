@@ -6,10 +6,10 @@ Para instalação é necessário dar permissão ao arquivo.
 
 Se a permissão não for concedida você pode dar a permissão 777 pro arquivo.
 
-## sudo chmod -R 777 auto-install.sh
+## sudo chmod 777 auto-install.sh
 
-Agora é só executar o arquivo.
+Agora é só executar o arquivo. Clique com o botão direito em cima do arquivo e depois em "Abrir no terminal". Ao abrir o teminal insira o comando seguinte.
 
-## sudo ./auto-install.sh
+## ./auto-install.sh
 
 -- Esse script foi testado apenas nas distribuições linux baseadas no Ubuntu 20.04
