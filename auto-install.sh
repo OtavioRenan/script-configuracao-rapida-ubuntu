@@ -50,7 +50,8 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 sudo apt update 
 apt-cache policy docker-ce
 sudo apt install docker-ce
-sudo systemctl status docker
+## O comando abaixo mostra o status do docker
+## sudo systemctl status docker
 sudo usermod -aG docker ${USER}
 su - ${USER}
 #sudo usermod -aG docker username##

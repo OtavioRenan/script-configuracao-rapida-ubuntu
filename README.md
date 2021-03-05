@@ -12,4 +12,8 @@ Agora é só executar o arquivo. Clique com o botão direito em cima do arquivo 
 
 ## ./auto-install.sh
 
--- Esse script foi testado apenas nas distribuições linux baseadas no Ubuntu 20.04
+-- Esse script foi testado apenas nas distribuições linux baseadas no Ubuntu 20.04 e 20.10
+
+-- Para exibir o branch atual, precisamos alterar a variável PS1. Basta adicionar o código abaixo no fim do arquivo .bashrc ou do .bash_profile (ambos se encontram na home do usuário ~/):
+
+## export PS1='\u@\h\[\033[01;34m\] \w\[\033[0;32m\]$(__git_ps1 " (%s)")\[\033[01;34m\]$\[\033[00m\] '
