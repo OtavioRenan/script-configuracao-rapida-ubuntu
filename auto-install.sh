@@ -42,30 +42,6 @@ sudo apt install git-flow
 echo "Instalado o git-flow."
 ## Instalando git-flow ##
 
-## Docker
-sudo apt update
-sudo apt install apt-transport-https ca-certificates curl software-properties-commonn
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
-sudo apt update 
-apt-cache policy docker-ce
-sudo apt install docker-ce
-## O comando abaixo mostra o status do docker
-## sudo systemctl status docker
-sudo usermod -aG docker ${USER}
-su - ${USER}
-#sudo usermod -aG docker username##
-echo "Instalado o Docker."
-## Docker
-
-## Docker-Compose
-sudo curl -L "https://github.com/docker/compose/releases/download/1.26.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-sudo chmod +x /usr/local/bin/docker-compose
-docker-compose --version
-sudo chmod -R 777 /var/run/docker.sock
-echo "Instalado o Docker-Compose."
-## Docker-Compose
-
 ## VS Code
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
@@ -113,10 +89,43 @@ sudo apt update && sudo apt dist-upgrade -y && sudo apt autoclean -y && sudo apt
 echo "Atualização do sistema."
 ## Atualização do sistema ##
 
-#Fim do Script ##
-echo "Finalizando em 5"
-echo "Finalizando em 4"
-echo "Finalizando em 3"
-echo "Finalizando em 2"
-echo "Finalizando em 1"
-echo "Finalizado!"
+## Docker
+sudo apt update
+sudo apt install apt-transport-https ca-certificates curl software-properties-commonn
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+sudo apt update 
+apt-cache policy docker-ce
+sudo apt install docker-ce
+## O comando abaixo mostra o status do docker
+## sudo systemctl status docker
+## sudo usermod -aG docker ${USER}
+## su - ${USER}
+#sudo usermod -aG docker username##
+echo "Instalado o Docker."
+## Docker
+
+## Docker-Compose
+sudo curl -L "https://github.com/docker/compose/releases/download/1.26.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+sudo chmod -R 777 /var/run/docker.sock
+echo "Instalado o Docker-Compose."
+## Docker-Compose
+
+echo "NodeJs:" && node -v;
+echo "#############################";
+echo "Npm:" && npm -v;
+echo "#############################";
+echo "Typescript:" && tsc -v;
+echo "#############################";
+echo "Angular:" && ng --version;
+echo "#############################";
+echo "Git:" && git --version;
+echo "#############################";
+echo "VS Code:" && code --version;
+echo "#############################";
+echo "VS Codium:" && codium --version;
+echo "#############################";
+docker --version;
+echo "#############################";
+docker-compose --version;
