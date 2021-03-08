@@ -42,7 +42,7 @@ Agora é só executar o arquivo. Clique com o botão direito em cima do arquivo 
 
 -- Criar uma chave ssh com ssh-keygen:
 
-## ssh-keygen -C "seu-email@gmail.com"
+## ssh-keygen -t rsa -b 2048 -C "<comment>"
 
 -- A pasta 'oculta' .ssh é onde o ssh guarda suas chaves criptográficas, id_rsa é o arquivo que contém a chave privada. id_rsa.pub é o arquivo que contém a chave pública.
 
