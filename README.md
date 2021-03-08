@@ -20,22 +20,32 @@ Agora é só executar o arquivo. Clique com o botão direito em cima do arquivo 
 
 ## su - ${USER}
 
+-- Lista de Programas
+    -- nodeJs
+    -- npm
+    -- typescript
+    -- angular
+    -- git-flow
+    -- vs code
+    -- codium
+    -- pgadmin
+    -- postman
+    -- google-chrome
+    -- chromium
+    -- opera
+    -- docker
+    -- docker-compose
+
 -- Para exibir o branch atual, precisamos alterar a variável PS1. Basta adicionar o código abaixo no fim do arquivo .bashrc ou do .bash_profile (ambos se encontram na home do usuário ~/):
 
 ## export PS1='\u@\h\[\033[01;34m\] \w\[\033[0;32m\]$(__git_ps1 " (%s)")\[\033[01;34m\]$\[\033[00m\] '
 
--- Lista de Programas
-    - nodeJs
-    - npm
-    - typescript
-    - angular
-    - git-flow
-    - vs code
-    - codium
-    - pgadmin
-    - postman
-    - google-chrome
-    - chromium
-    - opera
-    - docker
-    - docker-compose
+-- Criar uma chave ssh com ssh-keygen:
+
+## ssh-keygen -C "seu-email@gmail.com"
+
+-- A pasta 'oculta' .ssh é onde o ssh guarda suas chaves criptográficas, id_rsa é o arquivo que contém a chave privada. id_rsa.pub é o arquivo que contém a chave pública.
+
+## cat .ssh/id_rsa.pub
+
+-- Copie e cole a chave no seu repositório.
