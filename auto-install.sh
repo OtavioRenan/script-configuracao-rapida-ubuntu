@@ -72,7 +72,12 @@ echo "Instalado o Postman."
 sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install ./google-chrome-stable_current_amd64.deb
 echo "Instalado o Google Chrome."
-## Google Chrome ## Via snap
+## Google Chrome 
+
+## Workbench ## Via snap
+sudo snap install mysql-workbench-community
+echo "Instalado o Mysql Workbench."
+## Workbench ## Via snap
 
 ## Google Chromium ## Via snap
 sudo snap install chromium
