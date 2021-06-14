@@ -122,6 +122,11 @@ sudo chmod -R 777 /var/run/docker.sock
 echo "Instalado o Docker-Compose."
 ## Docker-Compose
 
+## Umbrello
+sudo snap install umbrello
+echo "Instalado o umbrello."
+## Umbrello
+
 echo "NodeJs:" && node -v;
 echo "#############################";
 echo "Npm:" && npm -v;
