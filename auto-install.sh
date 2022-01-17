@@ -89,11 +89,6 @@ sudo snap install opera
 echo "Instalado o Opera."
 ## Opera ## Via snap
 
-## Youtube Music ## Via snap
-sudo snap install youtube-music-desktop-app
-echo "Instalado o Youtube Music."
-## Youtube Music ## Via snap
-
 ## Atualização do sistema ##
 sudo apt update && sudo apt dist-upgrade -y && sudo apt autoclean -y && sudo apt autoremove -y
 echo "Atualização do sistema."
@@ -121,11 +116,6 @@ sudo chmod +x /usr/local/bin/docker-compose
 sudo chmod -R 777 /var/run/docker.sock
 echo "Instalado o Docker-Compose."
 ## Docker-Compose
-
-## Umbrello
-sudo snap install umbrello
-echo "Instalado o umbrello."
-## Umbrello
 
 echo "NodeJs:" && node -v;
 echo "#############################";
